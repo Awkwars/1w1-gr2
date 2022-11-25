@@ -1,0 +1,50 @@
+html {
+  scroll-behavior: smooth;
+}
+/*Pour enlever les espaces*/
+body,
+section,
+h1 {
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*Important de mettre avec justify-content pour que sa centre complètement*/
+  align-items: center;
+  /*Espace de 100vh pour qu'il prend l'espace d'une page entier*/
+  min-height: 100vh;
+}
+/*Permet le menu de rester en place même quand on bouge la page*/
+.menu {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  /*Le witdh permet le nav de prendre toute la largeur pour que le justify-content marche bien*/
+  width: 100%;
+}
+.menu a {
+  display: block;
+  flex: 0 1 100px;
+}
+
+#accueil {
+  background-color: rgb(40, 130, 190);
+}
+#inscription {
+  background-color: rgb(132, 177, 206);
+}
+#galerie {
+  background-color: rgba(132, 176, 206, 0.767);
+}
+#tableau {
+  background-color: rgba(132, 176, 206, 0.603);
+}
+#video {
+  background-color: rgb(132, 177, 206);
+}
+#pied-page {
+  background-color: rgb(14, 74, 114);
+}
